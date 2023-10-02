@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GFC-Uf-ubQ">
+    <device id="retina6_72" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trivia View Controller-->
+        <scene sceneID="5y5-ZY-yGm">
+            <objects>
+                <viewController id="GFC-Uf-ubQ" customClass="TriviaViewController" customModule="Trivia" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="px5-T4-w46" customClass="TriviaViewController.swift">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="neon-pink-square-banner-neon-square-png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="nQu-uN-ZhE">
+                                <rect key="frame" x="-54.600000000000023" y="-74" width="538" height="831"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="7Mv-za-z4b"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="MMs-gh-fVl"/>
+                                    <constraint firstAttribute="width" constant="200" id="O5H-jr-igT"/>
+                                    <constraint firstAttribute="height" constant="200" id="XnI-hP-AKm"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="eBW-qQ-UE2"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="lYd-db-NBZ"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="mIT-D0-Usb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question x/3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IlE-IV-99w">
+                                <rect key="frame" x="121" y="79" width="212" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" id="Qst-FY-cbk">
+                                <rect key="frame" x="140" y="125" width="149" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wda-On-ZDi">
+                                <rect key="frame" x="63" y="559" width="301" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57475143669999995" green="0.019237600420000001" blue="0.1159191601" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="1" green="0.70440226540027817" blue="0.66142641616445541" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choice one">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="choiceButtonTapped:" destination="FSO-LQ-Ohx" eventType="touchUpInside" id="VhW-Y0-gWf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgl-w5-Zcz">
+                                <rect key="frame" x="63" y="617" width="301" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78725032220000002" green="0.12508969989999999" blue="0.23524126240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="1" green="0.70440226539999995" blue="0.66142641619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choice 2">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="choiceButtonTapped:" destination="FSO-LQ-Ohx" eventType="touchUpInside" id="NfB-oN-qN7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PR-yH-0Na">
+                                <rect key="frame" x="64" y="675" width="301" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80422438789999995" green="0.18195204400000001" blue="0.34646390500000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="1" green="0.79325201827569669" blue="0.7887084493096983" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choice 3">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="choiceButtonTapped:" destination="FSO-LQ-Ohx" eventType="touchUpInside" id="kXM-l1-uRT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuP-wQ-vo9">
+                                <rect key="frame" x="64" y="733" width="301" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.441981399" blue="0.69214575690000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choice 4">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="choiceButtonTapped:" destination="FSO-LQ-Ohx" eventType="touchUpInside" id="UHV-o6-fqm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="question_text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" id="KSJ-3Y-tUU">
+                                <rect key="frame" x="103" y="240" width="220" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2t-l6-xhq">
+                                <rect key="frame" x="182" y="834" width="82" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Restart">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="restartButtonTapped:" destination="GFC-Uf-ubQ" eventType="touchUpInside" id="EV1-Gt-mim"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" id="lFo-lT-fLd">
+                                <rect key="frame" x="128" y="401" width="174" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Contest Score" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                    <color key="baseForegroundColor" red="0.4696853929" green="0.01026396118" blue="0.091225682299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="contestButtonTapped:" destination="FSO-LQ-Ohx" eventType="touchUpInside" id="seL-ZP-7Pi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wbs-1f-xbr"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IlE-IV-99w" firstAttribute="leading" secondItem="wbs-1f-xbr" secondAttribute="leading" constant="121" id="Qxh-gd-G56"/>
+                            <constraint firstItem="Wda-On-ZDi" firstAttribute="top" secondItem="KSJ-3Y-tUU" secondAttribute="bottom" constant="5" id="SGN-1f-Euy"/>
+                            <constraint firstItem="wbs-1f-xbr" firstAttribute="trailing" secondItem="IlE-IV-99w" secondAttribute="trailing" constant="122" id="cm1-XV-Iv6"/>
+                            <constraint firstItem="IlE-IV-99w" firstAttribute="top" secondItem="wbs-1f-xbr" secondAttribute="top" constant="20" id="juT-h7-ctC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="X0d-I9-Yq6"/>
+                    <connections>
+                        <outlet property="choiceFour" destination="DuP-wQ-vo9" id="moH-AQ-NTi"/>
+                        <outlet property="choiceOne" destination="Wda-On-ZDi" id="mnk-W1-w6b"/>
+                        <outlet property="choiceThree" destination="0PR-yH-0Na" id="BZb-Rr-uXE"/>
+                        <outlet property="choiceTwo" destination="pgl-w5-Zcz" id="hWe-A1-Z7o"/>
+                        <outlet property="contest" destination="lFo-lT-fLd" id="JaO-ze-rAg"/>
+                        <outlet property="questionNumber" destination="IlE-IV-99w" id="2tF-hq-jrN"/>
+                        <outlet property="questionText" destination="KSJ-3Y-tUU" id="bhm-Gz-I9e"/>
+                        <outlet property="restart" destination="x2t-l6-xhq" id="KS9-x0-tUb"/>
+                        <outlet property="topic" destination="Qst-FY-cbk" id="y59-Ji-aeB"/>
+                        <segue destination="pVx-Jg-SmB" kind="show" identifier="ShowCorrectSegue" id="RrP-QS-aML"/>
+                        <segue destination="OjH-ca-N4e" kind="show" identifier="ShowIncorrectSegue" id="BYA-Mq-wZJ"/>
+                        <segue destination="Fr4-o4-jV3" kind="show" identifier="ShowFinalSegue" id="QCj-rO-LxN"/>
+                        <segue destination="sSM-Ra-WwP" kind="show" identifier="ShowContestScoreSegue" id="ZCx-N3-mW9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSO-LQ-Ohx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309.76744186046511" y="-462.2317596566524"/>
+        </scene>
+        <!--Incorrect-->
+        <scene sceneID="uep-bv-HGm">
+            <objects>
+                <viewController title="Incorrect" id="OjH-ca-N4e" customClass="IncorrectViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pS2-UF-U46">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Incorrect!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yF-e3-VuC">
+                                <rect key="frame" x="130" y="441" width="170" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wXl-3f-IaZ"/>
+                        <color key="backgroundColor" red="0.80422438789999995" green="0.18195204400000001" blue="0.34646390500000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EQz-np-I6c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9O-zz-3xE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.9302325581396" y="-475.10729613733906"/>
+        </scene>
+        <!--Correct-->
+        <scene sceneID="3hj-b9-4ag">
+            <objects>
+                <viewController title="Correct" id="pVx-Jg-SmB" customClass="CorrectViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EOM-PF-9xk">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correct!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0o-uA-7PC">
+                                <rect key="frame" x="142" y="441" width="146" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VEX-x4-9xP"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wlo-hH-uee"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7nT-w5-kWE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="-468"/>
+        </scene>
+        <!--End View Controller-->
+        <scene sceneID="QvU-bq-mjZ">
+            <objects>
+                <viewController id="Fr4-o4-jV3" customClass="EndViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HOU-vp-c9K">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="neon-pink-square-banner-neon-square-png" id="Wxs-2q-8bT">
+                                <rect key="frame" x="97" y="139" width="235" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HOa-RP-qfC">
+                                <rect key="frame" x="191" y="241" width="46" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia beast!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zp6-11-QUD">
+                                <rect key="frame" x="153" y="372" width="124" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.441981399" blue="0.69214575690000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1yx-xo-ilj"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jTB-Oj-Yi2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1e-HX-So9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2465.5813953488373" y="-474.46351931330474"/>
+        </scene>
+        <!--Contest View Controller-->
+        <scene sceneID="QWF-IZ-Phb">
+            <objects>
+                <viewController id="sSM-Ra-WwP" customClass="ContestViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NYN-Pu-2gC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why would you like to contest your score?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BGT-R1-Of4">
+                                <rect key="frame" x="22.377289377298212" y="122.99999999999341" width="382" height="25.999999999994543"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="QHq-Ss-zhn">
+                                <rect key="frame" x="46.853479853497902" y="198.99999999998931" width="334" height="33.999999999992724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="textFieldDidEndEditing:" destination="Loz-FK-StW" eventType="editingDidEnd" id="XW8-vS-efX"/>
+                                    <outlet property="delegate" destination="sSM-Ra-WwP" id="zoT-B1-SDE"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vga-cK-OLt">
+                                <rect key="frame" x="192" y="332" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j47-ZS-5iG">
+                                <rect key="frame" x="143" y="444" width="144" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.80422438789999995" green="0.18195204400000001" blue="0.34646390500000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Return to Game">
+                                    <color key="baseBackgroundColor" red="1" green="0.14662885940000001" blue="0.3443504771" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="returnToGameButtonTapped:" destination="Loz-FK-StW" eventType="touchUpInside" id="5IK-Fb-CKk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="middleTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="9" id="hNH-AP-07Q">
+                                <rect key="frame" x="46" y="279" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.78725032220000002" green="0.12508969989999999" blue="0.23524126240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fTq-zf-EKR">
+                                <rect key="frame" x="139" y="303" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.78725032220000002" green="0.12508969989999999" blue="0.23524126240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks Message" textAlignment="center" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="none" minimumScaleFactor="0.75" adjustsFontForContentSizeCategory="YES" id="vDG-GJ-YpC">
+                                <rect key="frame" x="49.677655677674579" y="257.99999999998636" width="327.00000000013995" height="177.9999999999618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.78725032220000002" green="0.12508969989999999" blue="0.23524126240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BvD-DY-BZt"/>
+                        <color key="backgroundColor" red="1" green="0.79325201830000003" blue="0.78870844929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4ss-Im-FYm"/>
+                    <connections>
+                        <outlet property="contestTextField" destination="QHq-Ss-zhn" id="w3R-aJ-scR"/>
+                        <outlet property="returnToGame" destination="j47-ZS-5iG" id="zbM-s3-5gp"/>
+                        <outlet property="thanksMessageLabel" destination="vDG-GJ-YpC" id="8B0-WK-LxA"/>
+                        <segue destination="GFC-Uf-ubQ" kind="show" identifier="ShowGameSegue" id="ddG-Oz-QlN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Loz-FK-StW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3286.046511627907" y="-512.44635193133047"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZCx-N3-mW9"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="neon-pink-square-banner-neon-square-png" width="1920" height="1920"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
